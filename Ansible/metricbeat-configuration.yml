@@ -92,7 +92,7 @@ setup.kibana:
 #-------------------------- Elasticsearch output ------------------------------
 output.elasticsearch:
   # Array of hosts to connect to.
-  hosts: ["10.0.0.12:9200"]
+  hosts: ["10.0.0.8:9200"]
   username: "elastic"
   password: "changeme"
 
