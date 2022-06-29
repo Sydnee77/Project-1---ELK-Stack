@@ -1,10 +1,3 @@
-######################## Filebeat Configuration ############################
-# This file is a full configuration example documenting all non-deprecated
-# options in comments. For a shorter configuration example, that contains only
-# the most common options, please see filebeat.yml in the same directory.
-#
-# You can find the full configuration reference here:
-# https://www.elastic.co/guide/en/beats/filebeat/index.html
 filebeat.config.modules:
   path: ${path.config}/modules.d/*.yml
 
@@ -1102,7 +1095,7 @@ output.elasticsearch:
   # Scheme and port can be left out and will be set to the default (http and 9200)
   # In case you specify and additional path, the scheme is required: http://localhost:9200/path
   # IPv6 addresses should always be defined as: https://[2001:db8::1]:9200
-  hosts: ["10.0.0.12:9200"]
+  hosts: ["10.0.0.8:9200"]
   username: "elastic"
   password: "changeme" # TODO: Change this to the password you set
 
