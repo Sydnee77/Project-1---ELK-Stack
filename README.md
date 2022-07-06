@@ -117,12 +117,17 @@ In order to use the playbook, you will need to have an Ansible control node alre
 - Update the filebeat.yml file to include...
 - Run the playbook, and navigate to Kibana to check that the installation worked as expected.
 
-#### Answer the following questions to fill in the blanks:
-Which file is the playbook? Ansible-playbook files 
-Where do you copy it? Root of ansible
-Which file do you update to make Ansible run the playbook on a specific machine? Hosts configuration file
-How do I specify which machine to install the ELK server on versus which to install Filebeat on? HostName in the Host configuration file
-Which URL do you navigate to in order to check that the ELK server is running? SSH azadmin@10.0.0.5 Web-1
+### Answer the following questions to fill in the blanks:
+#### Which file is the playbook? 
+Ansible-playbook files 
+#### Where do you copy it? 
+Root of ansible
+#### Which file do you update to make Ansible run the playbook on a specific machine? 
+Hosts configuration file
+#### How do I specify which machine to install the ELK server on versus which to install Filebeat on? 
+HostName in the Host configuration file
+#### Which URL do you navigate to in order to check that the ELK server is running? 
+SSH azadmin@10.0.0.5 Web-1
 
 _As a **Bonus**, provide the specific commands the user will need to run to download the playbook, update the files, etc._
 
