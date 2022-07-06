@@ -7,10 +7,12 @@ The files in this repository were used to configure the network depicted below.
 These files have been tested and used to generate a live ELK deployment on Azure. They can be used to either recreate the entire deployment pictured above. Alternatively, select portions of the playbook file may be used to install only certain pieces of it, such as Filebeat.
 
 # My Playbook Files
----
 
 - [DVWA Playbook](https://github.com/Sydnee77/Project-1---ELK-Stack/blob/main/Ansible/DVWA.yml)
 - [Filebeat Configuration](https://github.com/Sydnee77/Project-1---ELK-Stack/blob/main/Ansible/filebeat-configuration.yml)
+- [Filebeat Playbook](https://github.com/Sydnee77/Project-1---ELK-Stack/blob/main/Ansible/filbeat-playbook.yml)
+- [metricbeat Configuration](https://github.com/Sydnee77/Project-1---ELK-Stack/blob/main/Ansible/metricbeat-configuration.yml)
+- [metricbeat Playbook](https://github.com/Sydnee77/Project-1---ELK-Stack/blob/main/Ansible/metricbeat-playbook.yml)
 
 ## This document contains the following details:
 
@@ -93,7 +95,7 @@ This ELK server is configured to monitor the following machines:
 #### Specify which Beats you successfully installed: 
 
 These Beats allow us to collect the following information from each machine:  System logs, events, performance, etc.
-#### In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc._
+#### In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
@@ -103,9 +105,9 @@ In order to use the playbook, you will need to have an Ansible control node alre
 - Update the filebeat.yml file to include...
 - Run the playbook, and navigate to ____ to check that the installation worked as expected.
 
-#### Answer the following questions to fill in the blanks:_
+#### Answer the following questions to fill in the blanks:
 Which file is the playbook? Ansible-playbook files 
-Where do you copy it? Rot of ansile
+Where do you copy it? Root of ansible
 Which file do you update to make Ansible run the playbook on a specific machine? Hosts configuration file
 How do I specify which machine to install the ELK server on versus which to install Filebeat on? HostName in the Host configuration file
 Which URL do you navigate to in order to check that the ELK server is running? SSH azadmin@10.0.0.5 Web-1
