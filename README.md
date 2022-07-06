@@ -53,7 +53,7 @@ _Note: Use the [Markdown Table Generator](http://www.tablesgenerator.com/markdow
 The machines on the internal network are not exposed to the public Internet. 
 
 Only the Elk machine can accept connections from the Internet. Access to this machine is only allowed from the following IP addresses:
-#### Add whitelisted IP addresses 10.0.0.8
+#### IP addresses 10.0.0.8
 
 Machines within the network can only be accessed by Jumpbox through the SSH Private Key.
 #### Which machine did you allow to access your ELK VM? Jumpbox
@@ -96,6 +96,7 @@ This ELK server is configured to monitor the following machines:
 
 These Beats allow us to collect the following information from each machine:  System logs, events, performance, etc.
 #### In 1-2 sentences, explain what kind of data each beat collects, and provide 1 example of what you expect to see. E.g., `Winlogbeat` collects Windows logs, which we use to track user logon events, etc.
+The Beats allow us to collect machine health, performance, system logs, events and so on from each machine.
 
 ### Using the Playbook
 In order to use the playbook, you will need to have an Ansible control node already configured. Assuming you have such a control node provisioned: 
